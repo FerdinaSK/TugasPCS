@@ -7,6 +7,7 @@
 
     </data>
 
+<<<<<<< HEAD
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,4 +24,28 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.home.MainActivity">
+
+       <androidx.fragment.app.FragmentContainerView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:name="androidx.navigation.fragment.NavHostFragment"
+           app:navGraph="@navigation/bottom_nav"
+           android:id="@+id/navHost"
+           app:defaultNavHost="true"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:id="@+id/bottom_nav"/>
+
+    </LinearLayout>
+>>>>>>> ecd1673... first commit
 </layout>
